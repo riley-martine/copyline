@@ -1,6 +1,7 @@
 #!/bin/bash
 COUNT=1
 LINES="$(perl -lne 'END { print $. }' ~/hi.txt)" #get total number of lines in file
+touch ~/temp.txt
 
 while [ $LINES -gt $COUNT ]; do
 	#read -n 1 -s                             #pause for keypress
