@@ -4,6 +4,7 @@ LINES="$(perl -lne 'END { print $. }' ~/hi.txt)" #get total number of lines in f
 
 while [ $LINES -gt $COUNT ]; do
 	read -n 1 -s                             #pause for keypress
+       #sleep 2                                  #other option, waits 2 seconds
 
 	sed "${COUNT}q;d" ~/hi.txt > ~/temp.txt  #get line $COUNT from file
 	xclip -in -selection c ~/temp.txt        #copy to clipboard
