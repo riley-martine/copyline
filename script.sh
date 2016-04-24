@@ -1,11 +1,6 @@
 #!/bin/bash
 COUNT=1
-<<<<<<< HEAD
 LINES="$(perl -lne 'END { print $. }' lines.txt)" #get total number of lines in file
-=======
-LINES="$(perl -lne 'END { print $. }' ~/hi.txt)" #get total number of lines in file
-touch ~/temp.txt
->>>>>>> 8e0d6ec61e20ecf7fd121c14db222ddfa2ce1139
 
 echo "./lines.txt being used"
 touch lines.txt
