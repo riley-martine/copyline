@@ -5,10 +5,10 @@ So I had this big long list of links to follow at some point and was looking to 
 
 Things you might have to do:
 
+git clone this repo
+
 chmod +x script.sh
 
-touch ~/hi.txt #PASTE YOUR FILE HERE
-
-touch ~/temp.txt
+Paste your file into lines.txt
 
 ./script.sh
